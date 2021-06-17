@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        convertToUppercase-in-0:
+          destination: values-topic
+          group: processor
+        convertToUppercase-out-0:
+          destination: uppercase-values-topic

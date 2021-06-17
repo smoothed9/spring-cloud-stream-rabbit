@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        onReceive-in-0:
+          destination: uppercase-values-topic
+          group: consumer
